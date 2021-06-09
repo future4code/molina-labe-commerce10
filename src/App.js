@@ -1,26 +1,71 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import saturno from './img/Saturn_during_Equinox'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const Grid = styled.div`display:grid;
+`;
+
+export const imageSaturno= styled.img`
+width:2%;
+`
+
+imageSaturno.defaultProps ={
+  src:saturno,
 }
+
+export const Row = styled.div`
+display:flex;
+`;
+
+
+
+
+
+
+
+
+
+
+
+class App extends React.Component{
+state={
+  produtos:[{
+    id:1,
+    quantidade:1,
+    produto:"Viagem a Saturno",
+    preço: 5000
+  },
+{
+  id:2,
+  quantidade:1,
+  produto:"Viagem a Marte",
+  preço: 3000
+
+}]
+}
+
+
+AddProdutos =() =>{
+ const listaDeProdutos = this.state.produtos
+}
+
+render(){
+return(
+  <Grid>
+  <Row>
+    <h1>Produtos</h1>
+    <image />
+  </Row>
+  </Grid>
+)
+}
+}
+
+
+
+
+
+
 
 export default App;
