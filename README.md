@@ -1,1 +1,0 @@
-Projeto semana 6 - LabECommerce  Viagens espaciais 🌎
