@@ -13,7 +13,6 @@ img {
 }
 `
 
-
 const BottonRemover = styled.button`
     background-color: white;
     border: 1px solid black;
@@ -32,7 +31,6 @@ const BottonRemover = styled.button`
 
 `
 
-
 export default class ItensCarrinho extends React.Component {
     render () {
         return (
@@ -40,15 +38,9 @@ export default class ItensCarrinho extends React.Component {
                 <img src = {this.props.produtosCarrinho.imageUrl}/>
                 <p>{this.props.produtosCarrinho.nome}</p>
                 <p>x{this.props.produtosCarrinho.quantidade}</p>
-
                 <BottonRemover onClick={()=> this.props.removerProdutoCarrinho(this.props.produtosCarrinho.id)}
                 >Remover 
                 </BottonRemover>
-
-                <button onClick={()=> this.props.removerProdutoCarrinho(this.props.produtosCarrinho.id)}
-                >Remover Item
-                </button>
-
             </ItemContainer>
         )
     }

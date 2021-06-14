@@ -5,7 +5,6 @@ import ItensCarrinho from './ItensCarrinho';
 const CarrinhoContainer = styled.div`
   background-color:#e2e2e2 ;
   
-
   width: 500px;
   justify-content: space-around;
   align-items:center;
@@ -40,19 +39,6 @@ const ButtomFinalizar = styled.button `
 
 
 
-
-  height: 1000px;
-  width: 600px;
-  justify-content: space-around;
-  align-items:center;
-  text-align: center;
-  border:solid 1px black;
-p {
-    margin-top: 40px;
-}
-`
-
-
 export default class Carrinho extends React.Component {
 
     ValorTotal = () => {
@@ -76,9 +62,7 @@ export default class Carrinho extends React.Component {
                     })}
                 
             <p>Valor total: R${this.ValorTotal()},00</p>
-
             <ButtomFinalizar> FINALIZAR COMPRA</ButtomFinalizar>
-
             </CarrinhoContainer>
         </>
         )

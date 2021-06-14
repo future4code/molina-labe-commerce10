@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 
-
 import Facebook from '../img/facebook.png'
 import Instagram from '../img/instagram.png'
 import Whatsapp from '../img/whatsapp.png'
@@ -40,18 +39,11 @@ const InformacoesContainer = styled.div `
 `
 const ContainerRedesSociais = styled.div `
     margin-left: 35px;
-=======
-const FooterContainer = styled.div`
-    background-color: #0e3558;
-    display: flex;
-    height: 100px;
-
 `
 
 export default class Footer extends React.Component {
     render(){
         return <FooterContainer>
-
             
             <ContainerRedesSociais>
                 <IconesRedesSociais src={Facebook} />
@@ -65,13 +57,6 @@ export default class Footer extends React.Component {
                 <p> | Contato |</p>
                 <p> © Copyright 2021 - SPACE</p>
             </InformacoesContainer>
-
-
-            <h2>Sobre Nós</h2>
-            
-            <tr></tr>
-            <h4>Loja especializada em Viagens para outro Mundo...</h4>
-            <tr></tr>
 
           </FooterContainer>
     }
