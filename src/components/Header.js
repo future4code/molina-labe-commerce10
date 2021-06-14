@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
+
 import Foguete from '../img/logo.png'
 import Carrinho from '../img/carrinho.png'
 
@@ -98,5 +99,22 @@ export default class Header extends React.Component {
                 </ContainerBotoes>
             </HeaderContainer>
         )
+
+const HeaderContainer = styled.div`
+    background-color: lightblue;
+    display: flex;
+    height: 50x;
+`
+
+ 
+
+export default class Header extends React.Component {
+    render(){
+        return <HeaderContainer>
+     
+            <h2>LabECommerce  Viagens espaciais</h2>
+           
+          </HeaderContainer>
+
     }
 } 
